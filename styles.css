@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: whitesmoke;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 header {
@@ -8,6 +9,15 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0 1em;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+.logo {
+    font-family: "Lobster", sans-serif;
+    color: palevioletred;
 }
 
 .nav-items {
@@ -30,12 +40,15 @@ header {
     height: 40vh;
 }
 
+/* GRID */
+
 .article-grid {
     display: grid;
 }
 
 .box {
     border: 1px solid black;
+    padding: 1em;
 }
 
 .box1 {
@@ -61,6 +74,8 @@ header {
 .box6 {
     grid-area: 6;
 }
+
+/* MEDIA QUERIES */
 
 @media (min-width: 560px) {
     .article-grid {
