@@ -1,3 +1,71 @@
 body {
     margin: 0;
+    background-color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items li {
+    margin: 0 1em;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.featured-article {
+    border: 1px solid black;
+    height: 40vh;
+}
+
+.article-grid {
+    display: grid;
+}
+
+.box {
+    border: 1px solid black;
+}
+
+.box1 {
+    grid-area: 1;
+}
+
+.box2 {
+    grid-area: 2;
+}
+
+.box3 {
+    grid-area: 3;
+}
+
+.box4 {
+    grid-area: 4;
+}
+
+.box5 {
+    grid-area: 5;
+}
+
+.box6 {
+    grid-area: 6;
+}
+
+@media (min-width: 560px) {
+    .article-grid {
+        grid-template-areas: 
+            "1 2 3"
+            "4 5 6";
+    }
 }
